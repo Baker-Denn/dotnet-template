@@ -1,0 +1,7 @@
+// Data Source=localhost;Database={{database-name}};Integrated Security=sspi;Encrypt=true;TrustServerCertificate=true;
+
+Table name {
+  Id int [pk, increment]
+}
+
+Ref: Table.Id > Table.Id [delete: cascade]
